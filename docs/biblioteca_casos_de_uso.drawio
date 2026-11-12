@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="biblioteca" name="Casos de uso">
+    <mxGraphModel dx="1246" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="swimlane;html=1;startSize=45;horizontal=1;fillColor=none;swimlaneFillColor=none;strokeColor=#444444;fontSize=16;fontStyle=1;align=center;" value="Sistema de Gestão de Biblioteca Universitária" vertex="1">
+          <mxGeometry height="650" width="750" x="205" y="55" as="geometry">
+            <mxRectangle height="45" width="390" x="205" y="55" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cadastrarExemplar" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Cadastrar exemplar" vertex="1">
+          <mxGeometry height="65" width="175" x="305" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="membro" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" value="Membro" vertex="1">
+          <mxGeometry height="110" width="65" x="80" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="bibliotecario" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" value="Bibliotecário" vertex="1">
+          <mxGeometry height="110" width="85" x="1020" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="consultar" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Consultar acervo" vertex="1">
+          <mxGeometry height="65" width="175" x="260" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="reservar" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Reservar livro" vertex="1">
+          <mxGeometry height="65" width="175" x="260" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="solicitar" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Solicitar devolução" vertex="1">
+          <mxGeometry height="65" width="175" x="260" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="consultarEmp" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Consultar empréstimos ativos" vertex="1">
+          <mxGeometry height="65" width="175" x="260" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="devolver" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Registrar devolução" vertex="1">
+          <mxGeometry height="65" width="175" x="715" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="multa" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Calcular multa" vertex="1">
+          <mxGeometry height="65" width="175" x="715" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="cadastrarLivro" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Cadastrar livro" vertex="1">
+          <mxGeometry height="65" width="175" x="715" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="emprestar" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Registrar empréstimo" vertex="1">
+          <mxGeometry height="65" width="175" x="715" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="cadastrarMembro" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#333333;fontColor=#111111;fontSize=14;" value="Cadastrar membro" vertex="1">
+          <mxGeometry height="65" width="175" x="715" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="membro" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="consultar" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="membro" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="reservar" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="membro" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="solicitar" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="membro" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="consultarEmp" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="bibliotecario" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="devolver" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="bibliotecario" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="cadastrarLivro" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="bibliotecario" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="emprestar" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="bibliotecario" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="cadastrarMembro" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="bibliotecario" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="cadastrarExemplar" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="bibliotecario" style="endArrow=none;html=1;rounded=0;strokeWidth=1.5;" target="consultar" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="extend" edge="1" parent="1" source="multa" style="endArrow=open;endFill=0;dashed=1;dashPattern=8 5;html=1;rounded=0;strokeWidth=1.5;fontSize=13;" target="devolver" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
